@@ -11,6 +11,7 @@ Group:		Applications/Productivity
 BuildRequires:  cmake
 BuildRequires:  extra-cmake-modules
 BuildRequires:  qt5-qtwebengine
+BuildRequires: qt5-qtbase-devel
 Requires:   qt5-qtbase
 Requires:   qt5-qtdeclarative
 Requires:   qt5-qtsvg
