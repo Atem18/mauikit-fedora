@@ -27,6 +27,7 @@ BuildRequires: cmake(KF5KIO)
 BuildRequires: cmake(KF5ConfigWidgets)
 BuildRequires: cmake(KF5Plasma)
 BuildRequires: cmake(KF5Declarative)
+BuildRequires: cmake(KDecoration2)
 BuildRequires: extra-cmake-modules
 
 %description
