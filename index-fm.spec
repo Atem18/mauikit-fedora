@@ -1,11 +1,11 @@
 %define snapshot 4f135ff7f6f83629f44bad5fd13731c30ae14a9d
 %global debug_package %{nil}
-Name:		index
+Name:		index-fm
 Version:	%{snapshot}
 Release:	1
 Summary:	File manager using MauiKit
-Url:		https://invent.kde.org/kde/index
-Source0:	%{url}/-/archive/%{snapshot}/index-%{snapshot}.tar.gz
+Url:		https://invent.kde.org/kde/index-fm
+Source0:	%{url}/-/archive/%{snapshot}/index-fm-%{snapshot}.tar.gz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires: cmake
