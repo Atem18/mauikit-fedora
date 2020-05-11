@@ -39,5 +39,5 @@ make
 
 %files
 %{_bindir}/index
-%{_kf5_applicationsdir}/org.kde.index.desktop
-%{_kf5_iconsdir}/hicolor/scalable/apps/index.svg
+%{_datadir}/applications/org.kde.index.desktop
+%{_datadir}/icons/hicolor/*/*/*
