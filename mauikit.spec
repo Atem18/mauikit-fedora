@@ -1,22 +1,33 @@
-%define snapshot ec2bf657f89d633c7cd74abfaec0b6e0afe1955f
+%define snapshot 90d2d9ea930483f4b2c29e8d6cf4d70f38e0c0ae
 %global debug_package %{nil}
 Name:		mauikit
 Version:	%{snapshot}
 Release:	1
 Summary:	Library for developing MAUI applications
-Url:		http://mauikit.org/
-Source0:	https://invent.kde.org/kde/mauikit/-/archive/master/mauikit-%{snapshot}.tar.bz2
+Url:		https://invent.kde.org/kde/mauikit
+Source0:	%{url}/-/archive/%{snapshot}/mauikit-%{snapshot}.tar.gz
 License:	GPLv3
 Group:		Applications/Productivity
-BuildRequires:  cmake
-BuildRequires:  extra-cmake-modules
-BuildRequires:  qt5-qtwebengine
-BuildRequires: qt5-qtbase-devel
-Requires:   qt5-qtbase
-Requires:   qt5-qtdeclarative
-Requires:   qt5-qtsvg
-Requires:   qt5-qtquickcontrols2
-Requires:   kf5-kio
+BuildRequires: cmake
+BuildRequires: cmake(Qt5Qml)
+BuildRequires: cmake(Qt5Sql)
+BuildRequires: cmake(Qt5Core)
+BuildRequires: cmake(Qt5Quick)
+BuildRequires: cmake(Qt5Gui)
+BuildRequires: cmake(Qt5Svg)
+BuildRequires: cmake(Qt5QuickControls2)
+BuildRequires: cmake(Qt5Network)
+BuildRequires: cmake(Qt5DBus)
+BuildRequires: cmake(Qt5Xml)
+BuildRequires: cmake(KF5I18n)
+BuildRequires: cmake(KF5Notifications)
+BuildRequires: cmake(KF5Config)
+BuildRequires: cmake(KF5Service)
+BuildRequires: cmake(KF5KIO)
+BuildRequires: cmake(KF5ConfigWidgets)
+BuildRequires: cmake(KF5Plasma)
+BuildRequires: cmake(KF5Declarative)
+BuildRequires: extra-cmake-modules
 
 %description
 Library for developing MAUI applications
@@ -28,7 +39,7 @@ It lets you quickly create a Maui application and access utilities and
 widgets shared amoing the other Maui apps.
 
 %prep
-%autosetup -p1 -n %{name}-master-%{snapshot}
+%autosetup -p1 -n %{name}-%{snapshot}
 
 %build
 cmake \
