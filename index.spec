@@ -5,7 +5,7 @@ Version:	%{snapshot}
 Release:	1
 Summary:	File manager using MauiKit
 Url:		https://invent.kde.org/kde/index
-Source0:	%{url}/-/archive/%{snapshot}/mauikit-%{snapshot}.tar.gz
+Source0:	%{url}/-/archive/%{snapshot}/index-%{snapshot}.tar.gz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires: cmake
