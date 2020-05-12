@@ -1,8 +1,9 @@
 %define snapshot 90d2d9ea930483f4b2c29e8d6cf4d70f38e0c0ae
+%define lname libMauiKit
 %global debug_package %{nil}
 Name:		mauikit
 Version:	%{snapshot}
-Release:	1
+Release:	2
 Summary:	Library for developing MAUI applications
 Url:		https://invent.kde.org/kde/mauikit
 Source0:	%{url}/-/archive/%{snapshot}/mauikit-%{snapshot}.tar.gz
@@ -31,6 +32,7 @@ BuildRequires: cmake(KDecoration2)
 BuildRequires: cmake(KF5SyntaxHighlighting)
 BuildRequires: cmake(KF5Attica)
 BuildRequires: extra-cmake-modules
+Requires:      %{lname} = %{version}
 Provides:      cmake(MauiKit)
 
 %description
@@ -41,6 +43,25 @@ QCC2 that follow the ongoing work on the Maui HIG.
 
 It lets you quickly create a Maui application and access utilities and
 widgets shared amoing the other Maui apps.
+
+
+%package devel
+Summary:  Development files for %{name}
+Group:    Development/Libraries/C and C++
+Requires: %{name} = %{version}
+Requires: %{lname} = %{version}
+
+%description devel
+Development package to build MauiKit applications.
+
+%package -n %{lname}
+Summary:  Set of Qt Quick components
+Group:    System/Libraries
+Requires: %{name} = %{version}
+
+%description -n %{lname}
+QtQuick plugins to build user interfaces based on the Maui guidelines. This contains the
+shared library.
 
 %prep
 %autosetup -p1 -n %{name}-%{snapshot}
@@ -56,9 +77,15 @@ make
 %make_install
 
 %files
-/usr/include/MauiKit
-/usr/lib/cmake/MauiKit
+%license LICENSE
+/usr/share/maui/csd
+%dir %{_kf5_qmldir}/QtQuick/Controls.2
+%dir %{_kf5_qmldir}/org
+%dir %{_kf5_qmldir}/org/kde
+%{_kf5_qmldir}/QtQuick/Controls.2/maui-style/
+%{_kf5_qmldir}/org/kde/mauikit/
 /usr/lib/libMauiKit.so
-/usr/lib64/qt5/qml/org/kde/mauikit
-/usr/lib64/qt5/qml/QtQuick/Controls.2/maui-style
-/usr/share/maui
+
+%files devel
+/usr/lib/cmake/MauiKit
+%{_includedir}/MauiKit
