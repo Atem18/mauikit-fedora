@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 Name:		index-fm
 Version:	%{snapshot}
-Release:	1
+Release:	2
 Summary:	File manager using MauiKit
 Url:		https://invent.kde.org/kde/index-fm
 Source0:	%{url}/-/archive/%{snapshot}/index-fm-%{snapshot}.tar.gz
@@ -38,6 +38,7 @@ make
 %make_install
 
 %files
+%license LICENSE
 %{_bindir}/index
-%{_datadir}/applications/org.kde.index.desktop
-%{_datadir}/icons/hicolor/*/*/*
+%{_kf5_applicationsdir}/org.kde.index.desktop
+%{_kf5_iconsdir}/hicolor/scalable/apps/index.svg
