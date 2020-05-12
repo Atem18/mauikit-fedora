@@ -47,7 +47,6 @@ widgets shared amoing the other Maui apps.
 Summary:  Development files for %{name}
 Group:    Development/Libraries/C and C++
 Requires: %{name} = %{version}
-Requires: %{lname} = %{version}
 
 %description devel
 Development package to build MauiKit applications.
