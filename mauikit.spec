@@ -1,9 +1,8 @@
 %define snapshot 90d2d9ea930483f4b2c29e8d6cf4d70f38e0c0ae
-%define lname libMauiKit
 %global debug_package %{nil}
 Name:		mauikit
 Version:	%{snapshot}
-Release:	2
+Release:	3
 Summary:	Library for developing MAUI applications
 Url:		https://invent.kde.org/kde/mauikit
 Source0:	%{url}/-/archive/%{snapshot}/mauikit-%{snapshot}.tar.gz
@@ -32,7 +31,6 @@ BuildRequires: cmake(KDecoration2)
 BuildRequires: cmake(KF5SyntaxHighlighting)
 BuildRequires: cmake(KF5Attica)
 BuildRequires: extra-cmake-modules
-Requires:      %{lname} = %{version}
 Provides:      cmake(MauiKit)
 
 %description
@@ -53,15 +51,6 @@ Requires: %{lname} = %{version}
 
 %description devel
 Development package to build MauiKit applications.
-
-%package -n %{lname}
-Summary:  Set of Qt Quick components
-Group:    System/Libraries
-Requires: %{name} = %{version}
-
-%description -n %{lname}
-QtQuick plugins to build user interfaces based on the Maui guidelines. This contains the
-shared library.
 
 %prep
 %autosetup -p1 -n %{name}-%{snapshot}
