@@ -39,6 +39,6 @@ make
 
 %files
 %license LICENSE
-%{_bindir}/index
-%{_kf5_applicationsdir}/org.kde.index.desktop
-%{_kf5_iconsdir}/hicolor/scalable/apps/index.svg
+/usr/bin/index
+/usr/share/applications/org.kde.index.desktop
+/usr/share/icons/hicolor/scalable/apps/index.svg
