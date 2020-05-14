@@ -1,4 +1,4 @@
-%define snapshot 90d2d9ea930483f4b2c29e8d6cf4d70f38e0c0ae
+%define snapshot 20042efb5ea89434f9e052fabfed192430343576
 %global debug_package %{nil}
 Name:		mauikit
 Version:	%{snapshot}
