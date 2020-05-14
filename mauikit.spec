@@ -70,6 +70,7 @@ make
 %dir %{_kf5_qmldir}/QtQuick/Controls.2
 %dir %{_kf5_qmldir}/org
 %dir %{_kf5_qmldir}/org/kde
+/usr/lib64/qt5/qml/org/kde/appletdecoration
 %{_kf5_qmldir}/QtQuick/Controls.2/maui-style/
 %{_kf5_qmldir}/org/kde/mauikit/
 /usr/lib/libMauiKit.so
