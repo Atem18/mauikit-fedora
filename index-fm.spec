@@ -23,6 +23,7 @@ BuildRequires: cmake(Qt5Svg)
 BuildRequires: cmake(Qt5QuickControls2)
 BuildRequires: cmake(Qt5WebEngine)
 BuildRequires: extra-cmake-modules
+BuildRequires: mauikit-devel
 
 %description
 Index is a file manager made using MauiKit.
