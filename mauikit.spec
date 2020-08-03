@@ -1,11 +1,11 @@
-%define snapshot 20042efb5ea89434f9e052fabfed192430343576
+%define version 1.1.1
 %global debug_package %{nil}
 Name:		mauikit
-Version:	%{snapshot}
-Release:	3
+Version:	%{version}
+Release:	1
 Summary:	Library for developing MAUI applications
 Url:		https://invent.kde.org/kde/mauikit
-Source0:	%{url}/-/archive/%{snapshot}/mauikit-%{snapshot}.tar.gz
+Source0:	%{url}/-/archive/v%{version}/mauikit-%{version}.tar.gz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires: cmake
