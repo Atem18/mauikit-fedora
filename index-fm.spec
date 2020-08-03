@@ -29,7 +29,7 @@ BuildRequires: mauikit-devel
 Index is a file manager made using MauiKit.
 
 %prep
-%autosetup -p1 -n %{name}-%{snapshot}
+%autosetup -p1 -n %{name}-%{version}
 
 %build
 cmake -DCMAKE_INSTALL_PREFIX=/usr

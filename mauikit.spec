@@ -52,7 +52,7 @@ Requires: %{name} = %{version}
 Development package to build MauiKit applications.
 
 %prep
-%autosetup -p1 -n %{name}-%{snapshot}
+%autosetup -p1 -n %{name}-%{version}
 
 %build
 cmake \
