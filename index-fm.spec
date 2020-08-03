@@ -1,11 +1,12 @@
 %define version 1.1.1
+%define commit 50599c31af93ba864238e6fcdd2b068d3e944201
 %global debug_package %{nil}
 Name:		index-fm
 Version:	%{version}
 Release:	1
 Summary:	File manager using MauiKit
 Url:		https://invent.kde.org/kde/index-fm
-Source0:	%{url}/-/archive/v%{version}/index-fm-%{version}.tar.gz
+Source0:	%{url}/-/archive/v%{version}/%{name}-%{version}.tar.gz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires: cmake
@@ -29,7 +30,7 @@ BuildRequires: mauikit-devel
 Index is a file manager made using MauiKit.
 
 %prep
-%autosetup -p1 -n %{name}-%{version}
+%autosetup -p1 -n %{name}-v%{version}-%{commit}
 
 %build
 cmake -DCMAKE_INSTALL_PREFIX=/usr

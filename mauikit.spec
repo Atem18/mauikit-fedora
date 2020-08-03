@@ -1,11 +1,12 @@
 %define version 1.1.1
+%define commit 066576b873a547e2fec56e149565b5fc8bfb5084
 %global debug_package %{nil}
 Name:		mauikit
 Version:	%{version}
 Release:	1
 Summary:	Library for developing MAUI applications
 Url:		https://invent.kde.org/kde/mauikit
-Source0:	%{url}/-/archive/v%{version}/mauikit-%{version}.tar.gz
+Source0:	%{url}/-/archive/v%{version}/%{name}-%{version}.tar.gz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires: cmake
@@ -52,7 +53,7 @@ Requires: %{name} = %{version}
 Development package to build MauiKit applications.
 
 %prep
-%autosetup -p1 -n %{name}-%{version}
+%autosetup -p1 -n %{name}-v%{version}-%{commit}
 
 %build
 cmake \
