@@ -3,7 +3,7 @@
 %global debug_package %{nil}
 Name:		index-fm
 Version:	%{version}
-Release:	1
+Release:	2
 Summary:	File manager using MauiKit
 Url:		https://invent.kde.org/kde/index-fm
 Source0:	%{url}/-/archive/v%{version}/%{name}-%{version}.tar.gz
@@ -25,6 +25,7 @@ BuildRequires: cmake(Qt5QuickControls2)
 BuildRequires: cmake(Qt5WebEngine)
 BuildRequires: extra-cmake-modules
 BuildRequires: mauikit-devel
+Requires: kf5-kirigami2
 
 %description
 Index is a file manager made using MauiKit.
