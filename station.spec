@@ -20,6 +20,7 @@ BuildRequires: cmake(KF5I18n)
 BuildRequires: cmake(KF5Notifications)
 BuildRequires: cmake(KF5CoreAddons)
 BuildRequires: mauikit-devel
+Requires: qmltermwidget
 
 %description
 Terminal Emulator using MauiKit
@@ -35,7 +36,5 @@ make
 %make_install
 
 %files
-%license LICENSE
 /usr/bin/station
 /usr/share/applications/org.kde.station.desktop
-/usr/share/icons/hicolor/scalable/apps/station.svg
