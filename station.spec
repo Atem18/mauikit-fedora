@@ -10,6 +10,7 @@ Source0:	%{url}/-/archive/v%{version}/%{name}-%{version}.tar.gz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires: cmake
+BuildRequires: extra-cmake-modules
 BuildRequires: cmake(Qt5Qml)
 BuildRequires: cmake(Qt5Quick)
 BuildRequires: cmake(Qt5Sql)
