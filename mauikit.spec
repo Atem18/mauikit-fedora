@@ -1,9 +1,9 @@
-%define version 1.1.1
-%define commit 066576b873a547e2fec56e149565b5fc8bfb5084
+%define version 1.2.0
+%define commit 65adde820cc23a54938f270fbeeacc70ebd51624
 %global debug_package %{nil}
 Name:		mauikit
 Version:	%{version}
-Release:	1
+Release:	0
 Summary:	Library for developing MAUI applications
 Url:		https://invent.kde.org/kde/mauikit
 Source0:	%{url}/-/archive/v%{version}/%{name}-%{version}.tar.gz
