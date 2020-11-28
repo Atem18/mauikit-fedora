@@ -10,6 +10,7 @@ Source0:	%{url}/-/archive/v%{version}/%{name}-%{version}.tar.gz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires: cmake
+BuildRequires: cmake(KF5Archive)
 BuildRequires: cmake(KF5I18n)
 BuildRequires: cmake(KF5Service)
 BuildRequires: cmake(KF5Notifications)
