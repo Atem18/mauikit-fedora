@@ -3,13 +3,21 @@
 %global debug_package %{nil}
 Name:		mauikit
 Version:	%{version}
-Release:	0
+Release:	1
 Summary:	Library for developing MAUI applications
 Url:		https://invent.kde.org/kde/mauikit
 Source0:	%{url}/-/archive/v%{version}/%{name}-%{version}.tar.gz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires: cmake
+BuildRequires: cmake(KF5I18n)
+BuildRequires: cmake(KF5Notifications)
+BuildRequires: cmake(KF5Config)
+BuildRequires: cmake(KF5Service)
+BuildRequires: cmake(KF5KIO)
+BuildRequires: cmake(KF5ConfigWidgets)
+BuildRequires: cmake(KF5Attica)
+BuildRequires: cmake(KF5SyntaxHighlighting)
 BuildRequires: cmake(Qt5Qml)
 BuildRequires: cmake(Qt5Sql)
 BuildRequires: cmake(Qt5Core)
@@ -20,18 +28,9 @@ BuildRequires: cmake(Qt5QuickControls2)
 BuildRequires: cmake(Qt5Network)
 BuildRequires: cmake(Qt5DBus)
 BuildRequires: cmake(Qt5Xml)
-BuildRequires: cmake(KF5I18n)
-BuildRequires: cmake(KF5Notifications)
-BuildRequires: cmake(KF5Config)
-BuildRequires: cmake(KF5Service)
-BuildRequires: cmake(KF5KIO)
-BuildRequires: cmake(KF5ConfigWidgets)
-BuildRequires: cmake(KF5Plasma)
-BuildRequires: cmake(KF5Declarative)
-BuildRequires: cmake(KDecoration2)
-BuildRequires: cmake(KF5SyntaxHighlighting)
-BuildRequires: cmake(KF5Attica)
+BuildRequires: cmake(Qt5WebEngine)
 BuildRequires: extra-cmake-modules
+BuildRequires: fdupes
 Provides:      cmake(MauiKit)
 
 %description
@@ -42,7 +41,6 @@ QCC2 that follow the ongoing work on the Maui HIG.
 
 It lets you quickly create a Maui application and access utilities and
 widgets shared amoing the other Maui apps.
-
 
 %package devel
 Summary:  Development files for %{name}
