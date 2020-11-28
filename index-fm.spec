@@ -3,19 +3,19 @@
 %global debug_package %{nil}
 Name:		index-fm
 Version:	%{version}
-Release:	1
+Release:	0
 Summary:	File manager using MauiKit
 Url:		https://invent.kde.org/kde/index-fm
 Source0:	%{url}/-/archive/v%{version}/%{name}-%{version}.tar.gz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires: cmake
-BuildRequires: cmake(KF5Archive)
 BuildRequires: cmake(KF5I18n)
 BuildRequires: cmake(KF5Service)
 BuildRequires: cmake(KF5Notifications)
 BuildRequires: cmake(KF5KIO)
 BuildRequires: cmake(KF5Attica)
+BuildRequires: cmake(KF5Archive)
 BuildRequires: cmake(KF5SyntaxHighlighting)
 BuildRequires: cmake(MauiKit)
 BuildRequires: cmake(Qt5Qml)
@@ -25,6 +25,7 @@ BuildRequires: cmake(Qt5Svg)
 BuildRequires: cmake(Qt5QuickControls2)
 BuildRequires: cmake(Qt5WebEngine)
 BuildRequires: extra-cmake-modules
+BuildRequires: mauikit-devel
 Requires: kf5-kirigami2
 
 %description
@@ -41,6 +42,7 @@ make
 %make_install
 
 %files
+%license LICENSE
 /usr/bin/index
 /usr/share/applications/org.kde.index.desktop
 /usr/share/icons/hicolor/scalable/apps/index.svg
