@@ -42,7 +42,6 @@ make
 %make_install
 
 %files
-%license LICENSE
 /usr/bin/index
 /usr/share/applications/org.kde.index.desktop
 /usr/share/icons/hicolor/scalable/apps/index.svg
