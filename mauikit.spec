@@ -4,7 +4,7 @@ Version:	2.0.2
 Release:	0
 Summary:	Library for developing MAUI applications
 Url:        https://invent.kde.org/maui/mauikit
-Source0:    mauikit-%{version}.tar.xz
+Source0:    https://download.kde.org/stable/maui/%{name}/%{version}/%{name}-%{version}.tar.xz
 License:	LGPL-3.0
 Group:		Applications/Productivity
 BuildRequires: cmake

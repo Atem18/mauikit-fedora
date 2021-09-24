@@ -3,7 +3,7 @@ Version:	2.0.2
 Release:	0
 Summary:	Maui File manager
 Url:		https://invent.kde.org/kde/index-fm
-Source0:	index-fm-%{version}.tar.xz
+Source0:    https://download.kde.org/stable/maui/%{name}/%{version}/%{name}-%{version}.tar.xz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires: cmake

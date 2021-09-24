@@ -3,7 +3,7 @@ Version:	2.0.0
 Release:	0
 Summary:	Convergent terminal emulator
 Url:		https://invent.kde.org/maui/station
-Source0:	station-%{version}.tar.xz
+Source0:    https://download.kde.org/stable/maui/%{name}/%{version}/%{name}-%{version}.tar.xz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires: cmake

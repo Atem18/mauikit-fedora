@@ -3,7 +3,7 @@ Version:	2.0.0
 Release:	0
 Summary:	Document and EBook collection manager
 Url:		https://invent.kde.org/maui/shelf
-Source0:	shelf-%{version}.tar.xz
+Source0:    https://download.kde.org/stable/maui/%{name}/%{version}/%{name}-%{version}.tar.xz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires: cmake
