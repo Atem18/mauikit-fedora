@@ -71,9 +71,6 @@ make
 %{_kf5_qmldir}/org/mauikit/
 %exclude %{_kf5_qmldir}/org/mauikit/controls/libs/appview.h
 
-%files -n %{_shared_libname}
-%{_kf5_libdir}/%{_shared_libname}.so
-
 %files devel
 %doc README.md
 %{_includedir}/*
