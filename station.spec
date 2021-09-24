@@ -1,7 +1,7 @@
 Name:		station
 Version:	2.0.0
 Release:	0
-Summary:	Terminal Emulator using MauiKit
+Summary:	Convergent terminal emulator
 Url:		https://invent.kde.org/maui/station
 Source0:	station-%{version}.tar.xz
 License:	GPLv3
@@ -20,7 +20,7 @@ BuildRequires: mauikit-devel
 Requires: qmltermwidget
 
 %description
-Terminal Emulator using MauiKit
+Convergent terminal emulator
 
 %prep
 %autosetup -p1 -n %{name}-v%{version}-%{commit}
