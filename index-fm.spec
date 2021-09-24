@@ -1,5 +1,5 @@
 Name:		index-fm
-Version:	2.0.2
+Version:	2.0.0
 Release:	0
 Summary:	Maui File manager
 Url:		https://invent.kde.org/kde/index-fm
