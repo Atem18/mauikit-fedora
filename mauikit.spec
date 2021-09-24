@@ -1,13 +1,11 @@
-%define version 1.2.0
-%define commit 65adde820cc23a54938f270fbeeacc70ebd51624
 %global debug_package %{nil}
 Name:		mauikit
-Version:	%{version}
+Version:	2.0.2
 Release:	0
 Summary:	Library for developing MAUI applications
-Url:		https://invent.kde.org/kde/mauikit
-Source0:	%{url}/-/archive/v%{version}/%{name}-%{version}.tar.gz
-License:	GPLv3
+Url:        https://invent.kde.org/maui/mauikit
+Source0:    mauikit-%{version}.tar.xz
+License:	LGPL-3.0
 Group:		Applications/Productivity
 BuildRequires: cmake
 BuildRequires: cmake(Qt5Qml)
@@ -47,13 +45,13 @@ widgets shared amoing the other Maui apps.
 %package devel
 Summary:  Development files for %{name}
 Group:    Development/Libraries/C and C++
-Requires: %{name} = %{version}
+Requires: %{name} = %{version}-%{release}
 
 %description devel
 Development package to build MauiKit applications.
 
 %prep
-%autosetup -p1 -n %{name}-v%{version}-%{commit}
+%autosetup -p1 -n %{name}-%{version}
 
 %build
 cmake \
@@ -67,15 +65,17 @@ make
 
 %files
 %license LICENSE
-/usr/share/maui/csd
-%dir %{_kf5_qmldir}/QtQuick/Controls.2
-%dir %{_kf5_qmldir}/org
-%dir %{_kf5_qmldir}/org/kde
-/usr/lib64/qt5/qml/org/kde/appletdecoration
+%dir %{_kf5_qmldir}/QtQuick/Controls.2/
 %{_kf5_qmldir}/QtQuick/Controls.2/maui-style/
-%{_kf5_qmldir}/org/kde/mauikit/
-/usr/lib/libMauiKit.so
+%dir %{_kf5_qmldir}/org/
+%{_kf5_qmldir}/org/mauikit/
+%exclude %{_kf5_qmldir}/org/mauikit/controls/libs/appview.h
+
+%files -n %{_shared_libname}
+%{_kf5_libdir}/%{_shared_libname}.so
 
 %files devel
-/usr/lib/cmake/MauiKit
-%{_includedir}/MauiKit
+%doc README.md
+%{_includedir}/*
+%{_libdir}/cmake/MauiKit/
+%{_kf5_qmldir}/org/mauikit/controls/libs/appview.h

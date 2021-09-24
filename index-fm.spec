@@ -1,12 +1,9 @@
-%define version 1.2.0
-%define commit 9fb6d8d4b4c1e863172b4e27a6d731fd7a2bac6b
-%global debug_package %{nil}
 Name:		index-fm
-Version:	%{version}
+Version:	2.0.2
 Release:	0
-Summary:	File manager using MauiKit
+Summary:	Maui File manager
 Url:		https://invent.kde.org/kde/index-fm
-Source0:	%{url}/-/archive/v%{version}/%{name}-%{version}.tar.gz
+Source0:	index-fm-%{version}.tar.xz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires: cmake
@@ -25,11 +22,11 @@ BuildRequires: cmake(Qt5Svg)
 BuildRequires: cmake(Qt5QuickControls2)
 BuildRequires: cmake(Qt5WebEngine)
 BuildRequires: extra-cmake-modules
-BuildRequires: mauikit-devel
-Requires: kf5-kirigami2
+Requires: qmltermwidget
 
 %description
-Index is a file manager made using MauiKit.
+Index is a file manager that works on desktops, Android and Plasma Mobile.
+Index lets you browse your system files and applications and preview your music, text, image and video files and share them with external applications.
 
 %prep
 %autosetup -p1 -n %{name}-v%{version}-%{commit}

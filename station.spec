@@ -1,12 +1,9 @@
-%define version 1.2.0
-%define commit 3f4ac7629e4953c6d5a55f5163c6f7b987927ae6
-%global debug_package %{nil}
 Name:		station
-Version:	%{version}
+Version:	2.0.0
 Release:	0
 Summary:	Terminal Emulator using MauiKit
 Url:		https://invent.kde.org/maui/station
-Source0:	%{url}/-/archive/v%{version}/%{name}-%{version}.tar.gz
+Source0:	station-%{version}.tar.xz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires: cmake
