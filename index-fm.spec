@@ -29,7 +29,7 @@ Index is a file manager that works on desktops, Android and Plasma Mobile.
 Index lets you browse your system files and applications and preview your music, text, image and video files and share them with external applications.
 
 %prep
-%autosetup -p1 -n %{name}-v%{version}-%{commit}
+%autosetup -p1 -n %{name}-v%{version}
 
 %build
 cmake -DCMAKE_INSTALL_PREFIX=/usr
