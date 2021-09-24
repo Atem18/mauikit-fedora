@@ -31,6 +31,7 @@ BuildRequires: cmake(KDecoration2)
 BuildRequires: cmake(KF5SyntaxHighlighting)
 BuildRequires: cmake(KF5Attica)
 BuildRequires: extra-cmake-modules
+BuildRequires: libxcb-devel
 Provides:      cmake(MauiKit)
 
 %description
