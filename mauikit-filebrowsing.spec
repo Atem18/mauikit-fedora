@@ -8,6 +8,7 @@ Source0:        https://download.kde.org/stable/maui/%{name}/%{version}/%{name}-
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires:  cmake(Qt5Quick)
+BuildRequires:  cmake(KF5I18n)
 BuildRequires:	kf5-kio-devel
 BuildRequires:  extra-cmake-modules
 Requires:	MauiKit
