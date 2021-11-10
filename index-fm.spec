@@ -8,6 +8,7 @@ Source0:        https://download.kde.org/stable/maui/index/%{version}/%{name}-%{
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires:  cmake(Qt5Qml)
+BuildRequires:  cmake(Qt5QuickControls2)
 BuildRequires:  cmake(KF5Archive)
 BuildRequires:  mauikit-devel
 BuildRequires:  mauikit-filebrowsing-devel
