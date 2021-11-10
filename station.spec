@@ -8,6 +8,7 @@ Source0:        https://download.kde.org/stable/maui/%{name}/%{version}/%{name}-
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires:  cmake(Qt5Qml)
+BuildRequires:  cmake(KF5CoreAddons)
 BuildRequires:	extra-cmake-modules
 BuildRequires:  mauikit-filebrowsing-devel
 Requires:	hicolor-icon-theme
