@@ -7,9 +7,10 @@ Url:		https://invent.kde.org/kde/index-fm
 Source0:        https://download.kde.org/stable/maui/index/%{version}/%{name}-%{version}.tar.xz
 License:	GPLv3
 Group:		Applications/Productivity
+BuildRequires:  cmake(Qt5Qml)
+BuildRequires:  cmake(KF5Archive)
 BuildRequires:  mauikit-devel
 BuildRequires:  mauikit-filebrowsing-devel
-BuildRequires:  cmake(KF5Archive)
 BuildRequires:  extra-cmake-modules
 Requires:	mauikit-filebrowsing
 Requires:	hicolor-icon-theme
