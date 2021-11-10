@@ -10,6 +10,7 @@ Group:		Applications/Productivity
 BuildRequires:  cmake(Qt5Qml)
 BuildRequires:  cmake(KF5CoreAddons)
 BuildRequires:	extra-cmake-modules
+BuildRequires:  mauikit-devel
 BuildRequires:  mauikit-filebrowsing-devel
 Requires:	hicolor-icon-theme
 Requires:	mauikit-filebrowsing
