@@ -11,6 +11,7 @@ BuildRequires:  cmake(Qt5Quick)
 BuildRequires:  cmake(KF5I18n)
 BuildRequires:	kf5-kio-devel
 BuildRequires:  extra-cmake-modules
+BuildRequires:	MauiKit
 Requires:	MauiKit
 Requires:	kf5-kio
 Provides:	MauiKitFileBrowsing
