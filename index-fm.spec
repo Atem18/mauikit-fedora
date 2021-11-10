@@ -11,6 +11,7 @@ BuildRequires:  cmake(Qt5Qml)
 BuildRequires:  cmake(Qt5QuickControls2)
 BuildRequires:  cmake(KF5Archive)
 BuildRequires:  cmake(KF5CoreAddons)
+BuildRequires:  cmake(KF5KIO)
 BuildRequires:  mauikit-devel
 BuildRequires:  mauikit-filebrowsing-devel
 BuildRequires:  extra-cmake-modules
