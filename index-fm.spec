@@ -10,6 +10,7 @@ Group:		Applications/Productivity
 BuildRequires:  cmake(Qt5Qml)
 BuildRequires:  cmake(Qt5QuickControls2)
 BuildRequires:  cmake(KF5Archive)
+BuildRequires:  cmake(KF5CoreAddons)
 BuildRequires:  mauikit-devel
 BuildRequires:  mauikit-filebrowsing-devel
 BuildRequires:  extra-cmake-modules
