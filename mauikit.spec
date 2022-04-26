@@ -1,6 +1,6 @@
 %global debug_package %{nil}
 Name:		mauikit
-Version:	2.1.0
+Version:	2.1.1
 Release:	0
 Summary:	Library for developing MAUI applications
 Url:            https://invent.kde.org/maui/mauikit

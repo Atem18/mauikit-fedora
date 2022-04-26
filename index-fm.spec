@@ -1,6 +1,6 @@
 %global debug_package %{nil}
 Name:		index-fm
-Version:	2.1.0
+Version:	2.1.1
 Release:	0
 Summary:	Maui File manager
 Url:		https://invent.kde.org/kde/index-fm

@@ -1,5 +1,5 @@
 Name:		shelf
-Version:	2.0.0
+Version:	2.1.1
 Release:	0
 Summary:	Document and EBook collection manager
 Url:		https://invent.kde.org/maui/shelf
