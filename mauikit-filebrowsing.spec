@@ -1,6 +1,6 @@
 %global debug_package %{nil}
 Name:		mauikit-filebrowsing
-Version:	2.1.1
+Version:	2.2.0
 Release:	0
 Summary:	MauiKit File Browsing utilities and controls
 Url:		https://invent.kde.org/kde/index-fm
