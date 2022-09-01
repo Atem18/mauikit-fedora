@@ -37,3 +37,15 @@ make
 %files
 /usr/bin/shelf
 /usr/share/icons/hicolor/scalable/apps/shelf.svg
+/usr/include/Shelf/Poppler/shelfpoppler_version.h
+/usr/lib64/cmake/ShelfPoppler/ShelfPopplerConfig.cmake
+/usr/lib64/cmake/ShelfPoppler/ShelfPopplerConfigVersion.cmake
+/usr/lib64/qt5/qml/org/shelf/poppler/PDFViewer.qml
+/usr/lib64/qt5/qml/org/shelf/poppler/libShelfPoppler.so
+/usr/lib64/qt5/qml/org/shelf/poppler/qmldir
+/usr/share/applications/org.kde.shelf.desktop
+/usr/share/locale/*
+/usr/share/metainfo/org.kde.shelf.metainfo.xml
+
+%files devel
+/usr/lib/debug/usr/lib64/qt5/qml/org/shelf/poppler/*
