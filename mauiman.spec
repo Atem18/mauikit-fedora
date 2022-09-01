@@ -11,6 +11,7 @@ Group:		Applications/Productivity
 BuildRequires:  gcc-c++
 BuildRequires:  gcc
 BuildRequires:  cmake
+BuildRequires:  extra-cmake-modules
 Provides:       MauiMan
 
 %description
