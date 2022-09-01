@@ -16,6 +16,7 @@ BuildRequires: cmake(Qt5Quick)
 BuildRequires: cmake(Qt5Sql)
 BuildRequires: cmake(Qt5Svg)
 BuildRequires: cmake(Qt5QuickControls2)
+BuildRequires: cmake(MauiKitFileBrowsing)
 BuildRequires: extra-cmake-modules
 BuildRequires: mauikit-devel
 BuildRequires: poppler-qt5-devel
