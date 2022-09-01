@@ -12,6 +12,7 @@ BuildRequires:  gcc-c++
 BuildRequires:  gcc
 BuildRequires:  cmake
 BuildRequires:  extra-cmake-modules
+BuildRequires:  cmake(Qt5Core)
 Provides:       MauiMan
 
 %description
