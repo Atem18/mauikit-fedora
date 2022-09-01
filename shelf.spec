@@ -1,3 +1,4 @@
+%global debug_package %{nil}
 Name:		shelf
 Version:	2.2.0
 Release:	0
@@ -23,6 +24,14 @@ BuildRequires: poppler-qt5-devel
 
 %description
 Document and EBook collection manager
+
+%package devel
+Summary:  Development files for %{name}
+Group:    Development/Libraries/C and C++
+Requires: %{name} = %{version}-%{release}
+
+%description devel
+Development package to build MauiKit applications.
 
 %prep
 %autosetup -p1 -n %{name}-%{version}
