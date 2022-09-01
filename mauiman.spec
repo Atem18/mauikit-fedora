@@ -8,6 +8,7 @@ Source0:    https://download.kde.org/stable/maui/%{name}/%{version}/%{name}-%{ve
 License:	GPLv3
 Group:		Applications/Productivity
 
+BuildRequires:  cmake
 Provides:       MauiMan
 
 %description
