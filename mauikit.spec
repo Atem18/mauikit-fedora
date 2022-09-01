@@ -17,6 +17,7 @@ BuildRequires:  cmake(KF5I18n)
 BuildRequires:  cmake(KF5Kirigami2)
 BuildRequires:  cmake(KF5Notifications)
 BuildRequires:  cmake(KF5WindowSystem)
+BuildRequires:  cmake(MauiMan)
 BuildRequires:  extra-cmake-modules
 BuildRequires:  xcb-util-wm-devel
 Requires:       cmake(Qt5Svg)
