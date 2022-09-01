@@ -24,7 +24,7 @@ BuildRequires: poppler-qt5-devel
 Document and EBook collection manager
 
 %prep
-%autosetup -p1 -n %{name}-v%{version}
+%autosetup -p1 -n %{name}-%{version}
 
 %build
 cmake -DCMAKE_INSTALL_PREFIX=/usr
