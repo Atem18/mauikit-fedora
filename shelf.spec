@@ -36,5 +36,4 @@ make
 
 %files
 /usr/bin/shelf
-/usr/share/applications/org.maui.shelf.desktop
 /usr/share/icons/hicolor/scalable/apps/shelf.svg
