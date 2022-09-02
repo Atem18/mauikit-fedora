@@ -18,6 +18,7 @@ BuildRequires:  extra-cmake-modules
 Requires:	mauikit-filebrowsing
 Requires:	hicolor-icon-theme
 Requires: qt5-qtmultimedia
+Requires: qmltermwidget
 
 %description
 Index is a file manager that works on desktops, Android and Plasma Mobile.
