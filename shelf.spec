@@ -55,6 +55,3 @@ make
 /usr/share/applications/org.kde.shelf.desktop
 /usr/share/locale/*
 /usr/share/metainfo/org.kde.shelf.metainfo.xml
-
-%files devel
-/usr/lib/debug/usr/lib64/qt5/qml/org/shelf/poppler/*
