@@ -24,7 +24,9 @@ Requires:       cmake(Qt5Svg)
 Requires:       cmake(KF5I18n)
 Requires:       cmake(KF5Kirigami2)
 Requires:       cmake(KF5Notifications)
-Provides:       MauiKit
+Provides:       mauikit = %{version}
+Provides:       mauikit-devel = %{version}
+Provides:       cmake(MauiKit) = %{version}
 
 %description
 Library for developing MAUI applications
