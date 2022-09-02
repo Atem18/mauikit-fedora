@@ -1,30 +1,26 @@
-%global debug_package %{nil}
-Name:		mauiman
-Version:	1.0.0
-Release:	0
-Summary:	Maui Manager Library. Server and Library
-Url:		https://invent.kde.org/maui/mauiman
-Source0:    https://download.kde.org/stable/maui/%{name}/%{version}/%{name}-%{version}.tar.xz
-License:	GPLv3
-Group:		Applications/Productivity
+Name:           mauiman
+Version:        1.0.0
+Release:        0
+License:        GPL-3.0-or-later
+Summary:        Maui Manager Library. Server and public library API.
+URL:            https://mauikit.org/
+Source:         https://download.kde.org/stable/maui/%{name}/%{version}/%{name}-%{version}.tar.xz
+Group:          System Environment/Libraries
 
-BuildRequires:  gcc-c++
+Provides:       mauiman = %{version}
+Provides:       cmake(MauiMan) = %{version}
+
 BuildRequires:  gcc
+BuildRequires:  gcc-c++
 BuildRequires:  cmake
 BuildRequires:  extra-cmake-modules
+BuildRequires:  hicolor-icon-theme
+
 BuildRequires:  cmake(Qt5Core)
-Provides:       MauiMan
+BuildRequires:  cmake(Qt5DBus)
 
 %description
-Maui Manager Library. Server and Library
-
-%package devel
-Summary:  Development files for %{name}
-Group:    Development/Libraries/C and C++
-Requires: %{name} = %{version}-%{release}
-
-%description devel
-Development package to build MauiKit applications.
+Maui Manager Library. Server and public library API.
 
 %prep
 %autosetup -p1 -n %{name}-%{version}
@@ -39,7 +35,11 @@ make
 %make_install
 
 %files
-/usr/bin/MauiManServer
-/usr/include/MauiMan/*
-/usr/lib64/cmake/MauiMan/*
-/usr/lib64/libMauiMan.so
+%defattr(-,root,root,-)
+%doc README.md
+%{_bindir}/MauiManServer
+%{_kf5_libdir}/libMauiMan.so
+%{_kf5_libdir}/cmake/MauiMan
+%{_includedir}/MauiMan
+
+%changelog
